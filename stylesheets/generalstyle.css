@@ -1,0 +1,147 @@
+:root{
+    --color:#20A2D6;
+}
+body{
+ overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type:none;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2em 0 2em;
+}
+header nav ul li{
+    display:inline;
+}
+.menu-btn{
+    display:none;
+    font-size:2.2em;
+}
+.close-btn{
+    display:none;
+}
+header img{
+    width:5%;
+}
+header nav ul li a{
+    margin:0 15px 0 15px;
+    color:black;
+    font-size:large;
+    transition: all 1s;
+}
+header nav ul li a:hover{
+    border-bottom: 2px solid var(--color);
+    padding:0 9px 9px 9px;
+}
+.active-page{
+    border-bottom: 2px solid var(--color);
+    padding:0 9px 9px 9px;
+}
+.cta a{
+    color:white;
+    background-color:#20A2D6;
+    padding:10px 15px 10px 15px;
+    border-radius: 12px;
+    transition: all 1s;
+    font-size:large;
+}
+.cta a:hover{
+    background-color: black;
+}
+
+/* stylesheet for footer */
+footer{
+    background-color: black;
+    color:white;
+    padding:6px 0 6px 0;
+}
+footer h3, footer p, footer form, footer address, footer nav, .last-block{
+    text-align: center;
+}
+footer form input[type="email"]{
+      width:25%;
+      font-size: 1.5em;
+}
+footer form input[type="submit"]{
+    font-size: 1.5em;
+    color:white;
+    background-color: var(--color);
+    border-color:var(--color);
+    outline:none;
+    border-radius: 0 4px 4px 0;
+}
+footer nav ul li{
+    display:inline;
+    margin: 0 8px 0 8px;
+}
+footer nav ul li a{
+    color:white;
+}
+footer nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.last-block{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-image a img{
+    width:4%;
+    margin:0 5px 0 5px;
+    filter:invert(100%) sepia(0%) saturate(7444%) hue-rotate(268deg) brightness(109%) contrast(97%);
+}
+
+
+@media only screen and (max-width:767px){
+    header{
+        display:flex;
+    justify-content: space-between;
+    align-items: center;
+        padding:0.5em 1em 0.5em 1em;
+    }
+    header img{
+        width:10%;
+    }
+    header nav{
+        position: absolute;
+        background-color: var(--color);
+        width:100vw;
+        top: -600px;
+        z-index: 9;
+        left:0;
+        transition: all 1s;
+    }
+    header nav ul li{
+        display:block;
+        padding: 10px 0 10px 0;
+    }
+    header nav ul li a:hover{
+        border-bottom: 2px solid white;
+        padding:0 9px 9px 9px;
+    }
+    .menu-btn, .close-btn{
+        display:inline;
+        cursor:context-menu;
+    }
+    footer form{
+        border: 1px solid black;
+    }
+    footer form input[type="email"]{
+        width:60%;
+        font-size: 1.5em;
+  }
+  .last-block{
+    display:flex;
+    flex-direction:column-reverse ;
+}
+footer nav ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+}

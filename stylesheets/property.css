@@ -1,0 +1,82 @@
+main{
+    margin:0 0 3em 0;
+}
+.second-section{
+    padding:0 2em 0 2em;
+}
+.second-section h2,.second-section > p{
+    text-align: center;
+  }
+  .second-section h2{
+      font-size:2.2em;
+  }
+  .second-section > p{
+      font-size: 1.2em;
+  }
+  .image-card{
+      width:100%;
+     /* margin: 0 20px 0 20px; */
+     
+  }
+  .properties-slide{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:2em;
+     
+  }
+  .image-card > img{
+   width:100%;
+   height:60%;
+   border-radius: 8px 8px 0 0;
+  }
+  .location img{
+      width:5%;
+  }
+  .image-card .desc{
+      white-space:collapse;
+  }
+  .price{
+      font-weight: 600;
+  }
+  .buy-now span a{
+      color:var(--color);
+      background-color: white;
+      box-shadow: 1px 1px 2px 0.5px black ;
+      padding:5px 7px 5px 7px;
+      font-weight: 500;
+      border-radius:4px;
+      transition-property: background-color;
+      transition-duration: 1s;
+      margin:6px 0 15px 0;
+  }
+  .buy-now span a:hover{
+      color:white;
+      background-color:black;
+  }
+  @media only screen and (max-width:767px){
+    .second-section{
+        padding:0 1em 0 1em;
+    }
+    .second-section h2{
+        font-size:1.5em;
+    }
+    .second-section > p{
+        font-size: 0.8em;
+    }
+    .properties-slide{
+        display:grid;
+        grid-template-columns: 1fr;
+        row-gap:2em;
+       
+    }
+    /*main{
+        margin:0 0 100px 0;
+    } */
+    .image-card{
+        width:100%;
+        height:max-content;
+       /* margin: 0 20px 0 20px; */
+       
+    }
+  }
+  

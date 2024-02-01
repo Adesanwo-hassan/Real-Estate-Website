@@ -1,0 +1,209 @@
+
+/* hero section stylesheet start here */
+.hero-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/herobg.jpg);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    padding:5em 0 2em 2em;
+    color:white;
+    height:80vh;
+}
+.hero-section h1{
+    font-size:3.5em;
+}
+.hero-section > p{
+    font-size:1.2em;
+}
+.hero-cta a{
+    background-color:var(--color);
+    color: white;
+    margin:0 9px 0 9px;
+    padding: 8px 28px 8px 28px;
+    border-radius: 3px;
+    font-size:1.3em;
+    transition: all 1s;
+}
+.hero-cta a:hover{
+    background-color:black;
+    cursor: context-menu;
+}
+/*.hero-cta-active{
+    background-color: #20A2D6;
+} */
+.cta-col{
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+.selection form{
+    display:flex;
+}
+.selection form div{
+    margin:0 24px 0 24px;
+}
+.selection form div p{
+    font-size: 1.2em;
+}
+.selection form div select{
+    background-color: transparent;
+    color:white;
+    border: none;
+}
+.selection form div select option{
+    color:black;
+}
+/* SEcond section style start here */
+.second-section h2,.second-section > p{
+  text-align: center;
+}
+.second-section h2{
+    font-size:2.2em;
+}
+.second-section > p{
+    font-size: 1.2em;
+}
+.image-card{
+    width:50%;
+    margin: 0 20px 0 20px;
+   
+}
+.properties-slide{
+    overflow-x: auto;
+    overflow-y:auto;
+    white-space: nowrap;
+    display: flex;
+   
+}
+.image-card > img{
+ width:100%;
+ height:50%;
+}
+.location img{
+    width:5%;
+}
+.image-card .desc{
+    white-space:collapse;
+}
+.price{
+    font-weight: 600;
+}
+.buy-now span a{
+    color:var(--color);
+    background-color: white;
+    box-shadow: 1px 1px 2px 0.5px black ;
+    padding:5px 7px 5px 7px;
+    font-weight: 500;
+    border-radius:4px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    margin:6px 0 15px 0;
+}
+.buy-now span a:hover{
+    color:white;
+    background-color:black;
+}
+/* intro section */
+.intro-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+    padding:4em 2em 4em 2em;
+}
+.intro-section > div > img{
+    width:100%;
+}
+.intro-section > div > h3{
+    font-size: 1.8em;
+}
+.intro-section > div > p{
+    font-size: 1.2em;
+}
+.read-more span a{
+    color:white;
+    background-color:#20A2D6;
+    padding:10px 15px 10px 15px;
+    border-radius: 7px;
+    transition: all 1s;
+    font-size:large;
+}
+/* Third section style start here */
+.third-section h2{
+    text-align: center;
+}
+.client-card{
+   display:grid;
+   text-align: center;
+   padding:10px 0 10px 0;
+}
+.client-card img{
+    width:8%;
+    border-radius: 50%;
+    height:100px;
+    justify-self: center;
+}
+.client-card h4{
+    font-size: 1.3em;
+}
+.client-card h5{
+    font-size: 1em;
+    display: none;
+}
+
+@media only screen and (max-width:767px){
+    .hero-section{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/herobg.jpg);
+        background-repeat: no-repeat;
+        background-size:100vw 100vh ;
+        padding:5em 0 2em 1em;
+        color:white;
+        height:80vh;
+    }
+    .hero-section h1{
+        font-size:2em;
+    }
+    .hero-section > p{
+        font-size:1em;
+    }
+    .hero-cta a{
+        background-color:var(--color);
+        margin:0 9px 0 9px;
+        padding: 8px 28px 8px 28px;
+        border-radius: 3px;
+        font-size:1.1em;
+        transition: all 1s;
+    }
+    .hero-cta a:hover{
+        background-color:black;
+        cursor: context-menu;
+    }
+    .intro-section{
+        display:grid;
+        grid-template-columns: 1fr;
+        column-gap: 3em;
+        padding:4em 1em 4em 1em;
+    }
+    .selection form div{
+        margin:0 2px 0 2px;
+    }
+    .selection form div p{
+        font-size: 1em;
+    }
+    .image-card{
+        box-sizing: content-box;
+        width:200%;
+        margin: 0 20px 0 20px;
+       
+    }
+    .image-card > img{
+        width:100%;
+        height:50%;
+       }
+    .location img{
+        width:8%;
+    }
+    .client-card img{
+        width:40%;
+        border-radius: 50%;
+        height:100px;
+        justify-self: center;
+    }
+}
